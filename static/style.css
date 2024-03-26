@@ -1,0 +1,24 @@
+body{
+    background-image: url("./bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#container{
+    margin-top: 5%;
+}
+#textInput{
+    background-color: rgba(0, 0, 0, 0.455);
+    border-radius: 5%;
+    color: white;
+    
+}
+#output{
+    background-color: rgba(0, 0, 0, 0.455);
+    border-radius: 5%;
+    color: white;
+    
+}
+
+#btn{
+    border-radius: 5%;
+}
