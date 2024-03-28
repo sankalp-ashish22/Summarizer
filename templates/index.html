@@ -4,22 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text Summarizer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" />
     <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
+    <!-- <div class="mycontainer neon owner">
+        <h2> Summarizer </h2>
+    </div> -->
+   
+    <nav>
+        <dotlottie-player src="https://lottie.host/5b8a800f-611d-4440-97b6-4cacd042ee35/aLywinz4GT.json" class=lot background="transparent" speed="1" style="width: 100px; height: 300px;" loop autoplay></dotlottie-player>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Owner</a>
+        <a href="#">Support</a>
+        
+    </nav>
+
     <form action="/" method="post">
-        <div id="container">
+        <!-- <div id="container"> -->
         <div id="pos"><textarea id="textInput" name="text" rows="10" cols="50"></textarea></div><br>
-        <div id="btn_pos"><button type="submit" id="btn">Summarize</button></div>
-        </div>
+        <div id="btn_pos"><button type="submit">Summarize</button></div>
+        <!-- </div> -->
     </form>
-    <textarea id="output" rows="5" cols="50">
+    <textarea id="output" rows="10" cols="50">
     {% if data %}{{data.message}}{% endif %}
     </textarea><br>
-    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module">  
-    </script> 
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
 
-    <dotlottie-player src="https://lottie.host/e267179e-fc8f-4a45-896f-6bb92bee8baa/zqIHkZdqoS.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+    <!-- <dotlottie-player src="https://lottie.host/5b8a800f-611d-4440-97b6-4cacd042ee35/aLywinz4GT.json" class=lot background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player> -->
 </body>
 
 </html>

@@ -12,7 +12,7 @@ def summarize():
      if request.method=='POST':
         text=request.form['text']
         summarizer = pipeline("summarization", model="t5-base", tokenizer="t5-base", framework="tf") # 892M
-        summary=summarizer(text, min_length=20, max_length=100)
+        summary=summarizer(text, min_length=100, max_length=3000)
         data = {'message':summary[0]['summary_text']}
         return render_template('index.html',data=data)
 
